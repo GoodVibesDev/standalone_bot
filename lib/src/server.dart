@@ -38,7 +38,6 @@ class Server {
     _bot.onCommand().listen(_onCommand);
 
     _messageSender = TeleDartMessageSender(
-      botType: '',
       bot: _bot,
       logger: _logger,
       innerCache: cache,
