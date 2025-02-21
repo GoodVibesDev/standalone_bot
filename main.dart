@@ -14,7 +14,7 @@ Future<void> init(InternetAddress ip, int port) async {
     throw Exception('BOT_TOKEN is not provided');
   }
 
-  final logger = Logger();
+  final logger = Logger(filter: ProductionFilter());
   final server = Server(token, logger);
 
   GetIt.I
