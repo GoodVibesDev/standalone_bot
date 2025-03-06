@@ -20,7 +20,7 @@ dependencies:
   tg_utils:
     git:
       url: https://github.com/GoodVibesDev/tg_utils.git
-      ref: 3ba301e
+      ref: 804a871
 web_socket_channel: ^2.4.0
 
 dev_dependencies:
