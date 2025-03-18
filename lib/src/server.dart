@@ -101,7 +101,7 @@ class Server {
 
     final websocketEvent = ServerWebsocketEvent.fromJson(decodedMessage);
     websocketEvent.type
-        .createHandler(_bot, _messageSender)
+        .createHandler(_bot, _messageSender, _getClient(null))
         .handleEvent(websocketEvent.data);
   }
 

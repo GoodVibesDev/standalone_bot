@@ -1,3 +1,4 @@
+import 'package:standalone_bot/src/client/client.dart';
 import 'package:standalone_bot/src/event_handler/event_handler.dart';
 import 'package:teledart/teledart.dart';
 import 'package:tg_utils/tg_utils.dart';
@@ -12,7 +13,7 @@ enum ServerEventType {
   const ServerEventType(this.value, this.createHandler);
 
   final String value;
-  final AbstractEventHandler Function(TeleDart, TeleDartMessageSender)
+  final AbstractEventHandler Function(TeleDart, TeleDartMessageSender, Client?)
       createHandler;
 
   static ServerEventType fromJson(String value) {
@@ -28,29 +29,34 @@ enum ServerEventType {
 AbstractEventHandler _startHandlerFactory(
   TeleDart bot,
   TeleDartMessageSender messageSender,
+  Client? client,
 ) =>
     StartHandler(bot);
 
 AbstractEventHandler _sendMessageGroupsHandlerFactory(
   TeleDart bot,
   TeleDartMessageSender messageSender,
+  Client? client,
 ) =>
     SendMessageGroupsHandler(messageSender);
 
 AbstractEventHandler _getUserHandlerFactory(
   TeleDart bot,
   TeleDartMessageSender messageSender,
+  Client? client,
 ) =>
-    const GetUserHandler();
+    GetUserHandler(bot, client);
 
 AbstractEventHandler _getFileUrlHandlerFactory(
   TeleDart bot,
   TeleDartMessageSender messageSender,
+  Client? client,
 ) =>
     const GetFileUrlHandler();
 
 AbstractEventHandler _callbackAnswerHandlerFactory(
   TeleDart bot,
   TeleDartMessageSender messageSender,
+  Client? client,
 ) =>
     CallbackAnswerHandler(bot);
