@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,133 +10,30 @@ part of 'get_file_url_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-GetFileUrlData _$GetFileUrlDataFromJson(Map<String, dynamic> json) {
-  return _GetFileUrlData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$GetFileUrlData {
-  String get id => throw _privateConstructorUsedError;
-  String? get url => throw _privateConstructorUsedError;
-
-  /// Serializes this GetFileUrlData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  String get id;
+  String? get url;
 
   /// Create a copy of GetFileUrlData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $GetFileUrlDataCopyWith<GetFileUrlData> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+      _$GetFileUrlDataCopyWithImpl<GetFileUrlData>(
+          this as GetFileUrlData, _$identity);
 
-/// @nodoc
-abstract class $GetFileUrlDataCopyWith<$Res> {
-  factory $GetFileUrlDataCopyWith(
-          GetFileUrlData value, $Res Function(GetFileUrlData) then) =
-      _$GetFileUrlDataCopyWithImpl<$Res, GetFileUrlData>;
-  @useResult
-  $Res call({String id, String? url});
-}
-
-/// @nodoc
-class _$GetFileUrlDataCopyWithImpl<$Res, $Val extends GetFileUrlData>
-    implements $GetFileUrlDataCopyWith<$Res> {
-  _$GetFileUrlDataCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of GetFileUrlData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? url = freezed,
-  }) {
-    return _then(_value.copyWith(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: freezed == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$GetFileUrlDataImplCopyWith<$Res>
-    implements $GetFileUrlDataCopyWith<$Res> {
-  factory _$$GetFileUrlDataImplCopyWith(_$GetFileUrlDataImpl value,
-          $Res Function(_$GetFileUrlDataImpl) then) =
-      __$$GetFileUrlDataImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String id, String? url});
-}
-
-/// @nodoc
-class __$$GetFileUrlDataImplCopyWithImpl<$Res>
-    extends _$GetFileUrlDataCopyWithImpl<$Res, _$GetFileUrlDataImpl>
-    implements _$$GetFileUrlDataImplCopyWith<$Res> {
-  __$$GetFileUrlDataImplCopyWithImpl(
-      _$GetFileUrlDataImpl _value, $Res Function(_$GetFileUrlDataImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of GetFileUrlData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-    Object? url = freezed,
-  }) {
-    return _then(_$GetFileUrlDataImpl(
-      id: null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-      url: freezed == url
-          ? _value.url
-          : url // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$GetFileUrlDataImpl implements _GetFileUrlData {
-  const _$GetFileUrlDataImpl({required this.id, this.url});
-
-  factory _$GetFileUrlDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$GetFileUrlDataImplFromJson(json);
-
-  @override
-  final String id;
-  @override
-  final String? url;
-
-  @override
-  String toString() {
-    return 'GetFileUrlData(id: $id, url: $url)';
-  }
+  /// Serializes this GetFileUrlData to a JSON map.
+  Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetFileUrlDataImpl &&
+            other is GetFileUrlData &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.url, url) || other.url == url));
   }
@@ -144,39 +42,134 @@ class _$GetFileUrlDataImpl implements _GetFileUrlData {
   @override
   int get hashCode => Object.hash(runtimeType, id, url);
 
-  /// Create a copy of GetFileUrlData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$GetFileUrlDataImplCopyWith<_$GetFileUrlDataImpl> get copyWith =>
-      __$$GetFileUrlDataImplCopyWithImpl<_$GetFileUrlDataImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$GetFileUrlDataImplToJson(
-      this,
-    );
+  String toString() {
+    return 'GetFileUrlData(id: $id, url: $url)';
   }
 }
 
-abstract class _GetFileUrlData implements GetFileUrlData {
-  const factory _GetFileUrlData({required final String id, final String? url}) =
-      _$GetFileUrlDataImpl;
+/// @nodoc
+abstract mixin class $GetFileUrlDataCopyWith<$Res> {
+  factory $GetFileUrlDataCopyWith(
+          GetFileUrlData value, $Res Function(GetFileUrlData) _then) =
+      _$GetFileUrlDataCopyWithImpl;
+  @useResult
+  $Res call({String id, String? url});
+}
 
-  factory _GetFileUrlData.fromJson(Map<String, dynamic> json) =
-      _$GetFileUrlDataImpl.fromJson;
+/// @nodoc
+class _$GetFileUrlDataCopyWithImpl<$Res>
+    implements $GetFileUrlDataCopyWith<$Res> {
+  _$GetFileUrlDataCopyWithImpl(this._self, this._then);
+
+  final GetFileUrlData _self;
+  final $Res Function(GetFileUrlData) _then;
+
+  /// Create a copy of GetFileUrlData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? id = null,
+    Object? url = freezed,
+  }) {
+    return _then(_self.copyWith(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: freezed == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _GetFileUrlData implements GetFileUrlData {
+  const _GetFileUrlData({required this.id, this.url});
+  factory _GetFileUrlData.fromJson(Map<String, dynamic> json) =>
+      _$GetFileUrlDataFromJson(json);
 
   @override
-  String get id;
+  final String id;
   @override
-  String? get url;
+  final String? url;
 
   /// Create a copy of GetFileUrlData
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$GetFileUrlDataImplCopyWith<_$GetFileUrlDataImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  _$GetFileUrlDataCopyWith<_GetFileUrlData> get copyWith =>
+      __$GetFileUrlDataCopyWithImpl<_GetFileUrlData>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$GetFileUrlDataToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _GetFileUrlData &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, id, url);
+
+  @override
+  String toString() {
+    return 'GetFileUrlData(id: $id, url: $url)';
+  }
 }
+
+/// @nodoc
+abstract mixin class _$GetFileUrlDataCopyWith<$Res>
+    implements $GetFileUrlDataCopyWith<$Res> {
+  factory _$GetFileUrlDataCopyWith(
+          _GetFileUrlData value, $Res Function(_GetFileUrlData) _then) =
+      __$GetFileUrlDataCopyWithImpl;
+  @override
+  @useResult
+  $Res call({String id, String? url});
+}
+
+/// @nodoc
+class __$GetFileUrlDataCopyWithImpl<$Res>
+    implements _$GetFileUrlDataCopyWith<$Res> {
+  __$GetFileUrlDataCopyWithImpl(this._self, this._then);
+
+  final _GetFileUrlData _self;
+  final $Res Function(_GetFileUrlData) _then;
+
+  /// Create a copy of GetFileUrlData
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? id = null,
+    Object? url = freezed,
+  }) {
+    return _then(_GetFileUrlData(
+      id: null == id
+          ? _self.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: freezed == url
+          ? _self.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+// dart format on

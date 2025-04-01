@@ -6,7 +6,7 @@ part 'get_user_data.freezed.dart';
 part 'get_user_data.g.dart';
 
 @freezed
-class GetUserData with _$GetUserData {
+sealed class GetUserData with _$GetUserData {
   const factory GetUserData({
     required int chatId,
     required int userId,

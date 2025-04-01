@@ -5,7 +5,7 @@ part 'bot_banned_data.freezed.dart';
 part 'bot_banned_data.g.dart';
 
 @freezed
-class BotBannedData with _$BotBannedData {
+sealed class BotBannedData with _$BotBannedData {
   const factory BotBannedData({
     required int chatId,
   }) = _BotBannedData;

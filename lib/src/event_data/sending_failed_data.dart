@@ -6,7 +6,7 @@ part 'sending_failed_data.freezed.dart';
 part 'sending_failed_data.g.dart';
 
 @freezed
-class SendingFailedData with _$SendingFailedData {
+sealed class SendingFailedData with _$SendingFailedData {
   const factory SendingFailedData({
     required SerializedMessage message,
   }) = _SendingFailedData;

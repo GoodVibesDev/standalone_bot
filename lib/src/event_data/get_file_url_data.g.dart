@@ -6,14 +6,13 @@ part of 'get_file_url_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$GetFileUrlDataImpl _$$GetFileUrlDataImplFromJson(Map<String, dynamic> json) =>
-    _$GetFileUrlDataImpl(
+_GetFileUrlData _$GetFileUrlDataFromJson(Map<String, dynamic> json) =>
+    _GetFileUrlData(
       id: json['id'] as String,
       url: json['url'] as String?,
     );
 
-Map<String, dynamic> _$$GetFileUrlDataImplToJson(
-        _$GetFileUrlDataImpl instance) =>
+Map<String, dynamic> _$GetFileUrlDataToJson(_GetFileUrlData instance) =>
     <String, dynamic>{
       'id': instance.id,
       'url': instance.url,

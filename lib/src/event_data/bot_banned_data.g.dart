@@ -6,12 +6,12 @@ part of 'bot_banned_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$BotBannedDataImpl _$$BotBannedDataImplFromJson(Map<String, dynamic> json) =>
-    _$BotBannedDataImpl(
+_BotBannedData _$BotBannedDataFromJson(Map<String, dynamic> json) =>
+    _BotBannedData(
       chatId: (json['chatId'] as num).toInt(),
     );
 
-Map<String, dynamic> _$$BotBannedDataImplToJson(_$BotBannedDataImpl instance) =>
+Map<String, dynamic> _$BotBannedDataToJson(_BotBannedData instance) =>
     <String, dynamic>{
       'chatId': instance.chatId,
     };

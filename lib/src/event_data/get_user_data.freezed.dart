@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,147 +10,30 @@ part of 'get_user_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-GetUserData _$GetUserDataFromJson(Map<String, dynamic> json) {
-  return _GetUserData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$GetUserData {
-  int get chatId => throw _privateConstructorUsedError;
-  int get userId => throw _privateConstructorUsedError;
-  User? get user => throw _privateConstructorUsedError;
-
-  /// Serializes this GetUserData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  int get chatId;
+  int get userId;
+  User? get user;
 
   /// Create a copy of GetUserData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $GetUserDataCopyWith<GetUserData> get copyWith =>
-      throw _privateConstructorUsedError;
-}
+      _$GetUserDataCopyWithImpl<GetUserData>(this as GetUserData, _$identity);
 
-/// @nodoc
-abstract class $GetUserDataCopyWith<$Res> {
-  factory $GetUserDataCopyWith(
-          GetUserData value, $Res Function(GetUserData) then) =
-      _$GetUserDataCopyWithImpl<$Res, GetUserData>;
-  @useResult
-  $Res call({int chatId, int userId, User? user});
-}
-
-/// @nodoc
-class _$GetUserDataCopyWithImpl<$Res, $Val extends GetUserData>
-    implements $GetUserDataCopyWith<$Res> {
-  _$GetUserDataCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of GetUserData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? chatId = null,
-    Object? userId = null,
-    Object? user = freezed,
-  }) {
-    return _then(_value.copyWith(
-      chatId: null == chatId
-          ? _value.chatId
-          : chatId // ignore: cast_nullable_to_non_nullable
-              as int,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int,
-      user: freezed == user
-          ? _value.user
-          : user // ignore: cast_nullable_to_non_nullable
-              as User?,
-    ) as $Val);
-  }
-}
-
-/// @nodoc
-abstract class _$$GetUserDataImplCopyWith<$Res>
-    implements $GetUserDataCopyWith<$Res> {
-  factory _$$GetUserDataImplCopyWith(
-          _$GetUserDataImpl value, $Res Function(_$GetUserDataImpl) then) =
-      __$$GetUserDataImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({int chatId, int userId, User? user});
-}
-
-/// @nodoc
-class __$$GetUserDataImplCopyWithImpl<$Res>
-    extends _$GetUserDataCopyWithImpl<$Res, _$GetUserDataImpl>
-    implements _$$GetUserDataImplCopyWith<$Res> {
-  __$$GetUserDataImplCopyWithImpl(
-      _$GetUserDataImpl _value, $Res Function(_$GetUserDataImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of GetUserData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? chatId = null,
-    Object? userId = null,
-    Object? user = freezed,
-  }) {
-    return _then(_$GetUserDataImpl(
-      chatId: null == chatId
-          ? _value.chatId
-          : chatId // ignore: cast_nullable_to_non_nullable
-              as int,
-      userId: null == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as int,
-      user: freezed == user
-          ? _value.user
-          : user // ignore: cast_nullable_to_non_nullable
-              as User?,
-    ));
-  }
-}
-
-/// @nodoc
-@JsonSerializable()
-class _$GetUserDataImpl implements _GetUserData {
-  const _$GetUserDataImpl(
-      {required this.chatId, required this.userId, this.user});
-
-  factory _$GetUserDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$GetUserDataImplFromJson(json);
-
-  @override
-  final int chatId;
-  @override
-  final int userId;
-  @override
-  final User? user;
-
-  @override
-  String toString() {
-    return 'GetUserData(chatId: $chatId, userId: $userId, user: $user)';
-  }
+  /// Serializes this GetUserData to a JSON map.
+  Map<String, dynamic> toJson();
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$GetUserDataImpl &&
+            other is GetUserData &&
             (identical(other.chatId, chatId) || other.chatId == chatId) &&
             (identical(other.userId, userId) || other.userId == userId) &&
             (identical(other.user, user) || other.user == user));
@@ -159,42 +43,145 @@ class _$GetUserDataImpl implements _GetUserData {
   @override
   int get hashCode => Object.hash(runtimeType, chatId, userId, user);
 
-  /// Create a copy of GetUserData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$GetUserDataImplCopyWith<_$GetUserDataImpl> get copyWith =>
-      __$$GetUserDataImplCopyWithImpl<_$GetUserDataImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$GetUserDataImplToJson(
-      this,
-    );
+  String toString() {
+    return 'GetUserData(chatId: $chatId, userId: $userId, user: $user)';
   }
 }
 
-abstract class _GetUserData implements GetUserData {
-  const factory _GetUserData(
-      {required final int chatId,
-      required final int userId,
-      final User? user}) = _$GetUserDataImpl;
+/// @nodoc
+abstract mixin class $GetUserDataCopyWith<$Res> {
+  factory $GetUserDataCopyWith(
+          GetUserData value, $Res Function(GetUserData) _then) =
+      _$GetUserDataCopyWithImpl;
+  @useResult
+  $Res call({int chatId, int userId, User? user});
+}
 
-  factory _GetUserData.fromJson(Map<String, dynamic> json) =
-      _$GetUserDataImpl.fromJson;
+/// @nodoc
+class _$GetUserDataCopyWithImpl<$Res> implements $GetUserDataCopyWith<$Res> {
+  _$GetUserDataCopyWithImpl(this._self, this._then);
+
+  final GetUserData _self;
+  final $Res Function(GetUserData) _then;
+
+  /// Create a copy of GetUserData
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? chatId = null,
+    Object? userId = null,
+    Object? user = freezed,
+  }) {
+    return _then(_self.copyWith(
+      chatId: null == chatId
+          ? _self.chatId
+          : chatId // ignore: cast_nullable_to_non_nullable
+              as int,
+      userId: null == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int,
+      user: freezed == user
+          ? _self.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as User?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _GetUserData implements GetUserData {
+  const _GetUserData({required this.chatId, required this.userId, this.user});
+  factory _GetUserData.fromJson(Map<String, dynamic> json) =>
+      _$GetUserDataFromJson(json);
 
   @override
-  int get chatId;
+  final int chatId;
   @override
-  int get userId;
+  final int userId;
   @override
-  User? get user;
+  final User? user;
 
   /// Create a copy of GetUserData
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$GetUserDataImplCopyWith<_$GetUserDataImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  _$GetUserDataCopyWith<_GetUserData> get copyWith =>
+      __$GetUserDataCopyWithImpl<_GetUserData>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$GetUserDataToJson(
+      this,
+    );
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _GetUserData &&
+            (identical(other.chatId, chatId) || other.chatId == chatId) &&
+            (identical(other.userId, userId) || other.userId == userId) &&
+            (identical(other.user, user) || other.user == user));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, chatId, userId, user);
+
+  @override
+  String toString() {
+    return 'GetUserData(chatId: $chatId, userId: $userId, user: $user)';
+  }
 }
+
+/// @nodoc
+abstract mixin class _$GetUserDataCopyWith<$Res>
+    implements $GetUserDataCopyWith<$Res> {
+  factory _$GetUserDataCopyWith(
+          _GetUserData value, $Res Function(_GetUserData) _then) =
+      __$GetUserDataCopyWithImpl;
+  @override
+  @useResult
+  $Res call({int chatId, int userId, User? user});
+}
+
+/// @nodoc
+class __$GetUserDataCopyWithImpl<$Res> implements _$GetUserDataCopyWith<$Res> {
+  __$GetUserDataCopyWithImpl(this._self, this._then);
+
+  final _GetUserData _self;
+  final $Res Function(_GetUserData) _then;
+
+  /// Create a copy of GetUserData
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? chatId = null,
+    Object? userId = null,
+    Object? user = freezed,
+  }) {
+    return _then(_GetUserData(
+      chatId: null == chatId
+          ? _self.chatId
+          : chatId // ignore: cast_nullable_to_non_nullable
+              as int,
+      userId: null == userId
+          ? _self.userId
+          : userId // ignore: cast_nullable_to_non_nullable
+              as int,
+      user: freezed == user
+          ? _self.user
+          : user // ignore: cast_nullable_to_non_nullable
+              as User?,
+    ));
+  }
+}
+
+// dart format on

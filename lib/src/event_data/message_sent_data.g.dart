@@ -6,9 +6,8 @@ part of 'message_sent_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$MessageSentDataImpl _$$MessageSentDataImplFromJson(
-        Map<String, dynamic> json) =>
-    _$MessageSentDataImpl(
+_MessageSentData _$MessageSentDataFromJson(Map<String, dynamic> json) =>
+    _MessageSentData(
       chatId: (json['chatId'] as num).toInt(),
       message:
           SerializedMessage.fromJson(json['message'] as Map<String, dynamic>),
@@ -17,8 +16,7 @@ _$MessageSentDataImpl _$$MessageSentDataImplFromJson(
           .toList(),
     );
 
-Map<String, dynamic> _$$MessageSentDataImplToJson(
-        _$MessageSentDataImpl instance) =>
+Map<String, dynamic> _$MessageSentDataToJson(_MessageSentData instance) =>
     <String, dynamic>{
       'chatId': instance.chatId,
       'message': instance.message,

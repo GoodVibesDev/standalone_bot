@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,86 +10,60 @@ part of 'send_message_groups_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-SendMessageGroupsData _$SendMessageGroupsDataFromJson(
-    Map<String, dynamic> json) {
-  return _SendMessageGroupsData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$SendMessageGroupsData {
-  List<MessageGroup> get messageGroups => throw _privateConstructorUsedError;
-
-  /// Serializes this SendMessageGroupsData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  List<MessageGroup> get messageGroups;
 
   /// Create a copy of SendMessageGroupsData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $SendMessageGroupsDataCopyWith<SendMessageGroupsData> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $SendMessageGroupsDataCopyWith<$Res> {
-  factory $SendMessageGroupsDataCopyWith(SendMessageGroupsData value,
-          $Res Function(SendMessageGroupsData) then) =
-      _$SendMessageGroupsDataCopyWithImpl<$Res, SendMessageGroupsData>;
-  @useResult
-  $Res call({List<MessageGroup> messageGroups});
-}
-
-/// @nodoc
-class _$SendMessageGroupsDataCopyWithImpl<$Res,
-        $Val extends SendMessageGroupsData>
-    implements $SendMessageGroupsDataCopyWith<$Res> {
-  _$SendMessageGroupsDataCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of SendMessageGroupsData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $SendMessageGroupsDataCopyWith<SendMessageGroupsData> get copyWith =>
+      _$SendMessageGroupsDataCopyWithImpl<SendMessageGroupsData>(
+          this as SendMessageGroupsData, _$identity);
+
+  /// Serializes this SendMessageGroupsData to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? messageGroups = null,
-  }) {
-    return _then(_value.copyWith(
-      messageGroups: null == messageGroups
-          ? _value.messageGroups
-          : messageGroups // ignore: cast_nullable_to_non_nullable
-              as List<MessageGroup>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is SendMessageGroupsData &&
+            const DeepCollectionEquality()
+                .equals(other.messageGroups, messageGroups));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(messageGroups));
+
+  @override
+  String toString() {
+    return 'SendMessageGroupsData(messageGroups: $messageGroups)';
   }
 }
 
 /// @nodoc
-abstract class _$$SendMessageGroupsDataImplCopyWith<$Res>
-    implements $SendMessageGroupsDataCopyWith<$Res> {
-  factory _$$SendMessageGroupsDataImplCopyWith(
-          _$SendMessageGroupsDataImpl value,
-          $Res Function(_$SendMessageGroupsDataImpl) then) =
-      __$$SendMessageGroupsDataImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $SendMessageGroupsDataCopyWith<$Res> {
+  factory $SendMessageGroupsDataCopyWith(SendMessageGroupsData value,
+          $Res Function(SendMessageGroupsData) _then) =
+      _$SendMessageGroupsDataCopyWithImpl;
   @useResult
   $Res call({List<MessageGroup> messageGroups});
 }
 
 /// @nodoc
-class __$$SendMessageGroupsDataImplCopyWithImpl<$Res>
-    extends _$SendMessageGroupsDataCopyWithImpl<$Res,
-        _$SendMessageGroupsDataImpl>
-    implements _$$SendMessageGroupsDataImplCopyWith<$Res> {
-  __$$SendMessageGroupsDataImplCopyWithImpl(_$SendMessageGroupsDataImpl _value,
-      $Res Function(_$SendMessageGroupsDataImpl) _then)
-      : super(_value, _then);
+class _$SendMessageGroupsDataCopyWithImpl<$Res>
+    implements $SendMessageGroupsDataCopyWith<$Res> {
+  _$SendMessageGroupsDataCopyWithImpl(this._self, this._then);
+
+  final SendMessageGroupsData _self;
+  final $Res Function(SendMessageGroupsData) _then;
 
   /// Create a copy of SendMessageGroupsData
   /// with the given fields replaced by the non-null parameter values.
@@ -97,9 +72,9 @@ class __$$SendMessageGroupsDataImplCopyWithImpl<$Res>
   $Res call({
     Object? messageGroups = null,
   }) {
-    return _then(_$SendMessageGroupsDataImpl(
+    return _then(_self.copyWith(
       messageGroups: null == messageGroups
-          ? _value._messageGroups
+          ? _self.messageGroups
           : messageGroups // ignore: cast_nullable_to_non_nullable
               as List<MessageGroup>,
     ));
@@ -108,13 +83,12 @@ class __$$SendMessageGroupsDataImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$SendMessageGroupsDataImpl implements _SendMessageGroupsData {
-  const _$SendMessageGroupsDataImpl(
+class _SendMessageGroupsData implements SendMessageGroupsData {
+  const _SendMessageGroupsData(
       {final List<MessageGroup> messageGroups = const []})
       : _messageGroups = messageGroups;
-
-  factory _$SendMessageGroupsDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$SendMessageGroupsDataImplFromJson(json);
+  factory _SendMessageGroupsData.fromJson(Map<String, dynamic> json) =>
+      _$SendMessageGroupsDataFromJson(json);
 
   final List<MessageGroup> _messageGroups;
   @override
@@ -125,16 +99,27 @@ class _$SendMessageGroupsDataImpl implements _SendMessageGroupsData {
     return EqualUnmodifiableListView(_messageGroups);
   }
 
+  /// Create a copy of SendMessageGroupsData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'SendMessageGroupsData(messageGroups: $messageGroups)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$SendMessageGroupsDataCopyWith<_SendMessageGroupsData> get copyWith =>
+      __$SendMessageGroupsDataCopyWithImpl<_SendMessageGroupsData>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$SendMessageGroupsDataToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$SendMessageGroupsDataImpl &&
+            other is _SendMessageGroupsData &&
             const DeepCollectionEquality()
                 .equals(other._messageGroups, _messageGroups));
   }
@@ -144,37 +129,45 @@ class _$SendMessageGroupsDataImpl implements _SendMessageGroupsData {
   int get hashCode => Object.hash(
       runtimeType, const DeepCollectionEquality().hash(_messageGroups));
 
-  /// Create a copy of SendMessageGroupsData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$SendMessageGroupsDataImplCopyWith<_$SendMessageGroupsDataImpl>
-      get copyWith => __$$SendMessageGroupsDataImplCopyWithImpl<
-          _$SendMessageGroupsDataImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$SendMessageGroupsDataImplToJson(
-      this,
-    );
+  String toString() {
+    return 'SendMessageGroupsData(messageGroups: $messageGroups)';
   }
 }
 
-abstract class _SendMessageGroupsData implements SendMessageGroupsData {
-  const factory _SendMessageGroupsData(
-      {final List<MessageGroup> messageGroups}) = _$SendMessageGroupsDataImpl;
-
-  factory _SendMessageGroupsData.fromJson(Map<String, dynamic> json) =
-      _$SendMessageGroupsDataImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$SendMessageGroupsDataCopyWith<$Res>
+    implements $SendMessageGroupsDataCopyWith<$Res> {
+  factory _$SendMessageGroupsDataCopyWith(_SendMessageGroupsData value,
+          $Res Function(_SendMessageGroupsData) _then) =
+      __$SendMessageGroupsDataCopyWithImpl;
   @override
-  List<MessageGroup> get messageGroups;
+  @useResult
+  $Res call({List<MessageGroup> messageGroups});
+}
+
+/// @nodoc
+class __$SendMessageGroupsDataCopyWithImpl<$Res>
+    implements _$SendMessageGroupsDataCopyWith<$Res> {
+  __$SendMessageGroupsDataCopyWithImpl(this._self, this._then);
+
+  final _SendMessageGroupsData _self;
+  final $Res Function(_SendMessageGroupsData) _then;
 
   /// Create a copy of SendMessageGroupsData
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SendMessageGroupsDataImplCopyWith<_$SendMessageGroupsDataImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? messageGroups = null,
+  }) {
+    return _then(_SendMessageGroupsData(
+      messageGroups: null == messageGroups
+          ? _self._messageGroups
+          : messageGroups // ignore: cast_nullable_to_non_nullable
+              as List<MessageGroup>,
+    ));
+  }
 }
+
+// dart format on

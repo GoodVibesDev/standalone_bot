@@ -9,8 +9,8 @@ environment:
 dependencies:
   dart_frog: ^1.1.0
   dart_frog_web_socket: ^1.0.0
-  freezed_annotation: ^2.4.1
-  get_it: ^7.7.0
+  freezed_annotation: ^3.0.0
+  get_it: ^8.0.3
   hive: ^2.2.3
   json_annotation: ^4.9.0
   logger: ^2.5.0
@@ -20,12 +20,11 @@ dependencies:
   tg_utils:
     git:
       url: https://github.com/GoodVibesDev/tg_utils.git
-      ref: 83d20a74908a972bb19b7ad790c28b6c4085dda2
-web_socket_channel: ^2.4.0
+      ref: ef68093
+  web_socket_channel: ^2.4.0
 
 dev_dependencies:
   build_runner: ^2.4.11
-  freezed: ^2.5.2
-  json_serializable: ^6.8.0
-
+  freezed: ^3.0.4
+  json_serializable: ^6.9.4
   very_good_analysis: ^5.1.0

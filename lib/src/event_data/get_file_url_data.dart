@@ -5,7 +5,7 @@ part 'get_file_url_data.freezed.dart';
 part 'get_file_url_data.g.dart';
 
 @freezed
-class GetFileUrlData with _$GetFileUrlData {
+sealed class GetFileUrlData with _$GetFileUrlData {
   const factory GetFileUrlData({
     required String id,
     String? url,

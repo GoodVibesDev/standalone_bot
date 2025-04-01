@@ -6,17 +6,17 @@ part of 'send_message_groups_data.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$SendMessageGroupsDataImpl _$$SendMessageGroupsDataImplFromJson(
+_SendMessageGroupsData _$SendMessageGroupsDataFromJson(
         Map<String, dynamic> json) =>
-    _$SendMessageGroupsDataImpl(
+    _SendMessageGroupsData(
       messageGroups: (json['messageGroups'] as List<dynamic>?)
               ?.map((e) => MessageGroup.fromJson(e as Map<String, dynamic>))
               .toList() ??
           const [],
     );
 
-Map<String, dynamic> _$$SendMessageGroupsDataImplToJson(
-        _$SendMessageGroupsDataImpl instance) =>
+Map<String, dynamic> _$SendMessageGroupsDataToJson(
+        _SendMessageGroupsData instance) =>
     <String, dynamic>{
       'messageGroups': instance.messageGroups,
     };

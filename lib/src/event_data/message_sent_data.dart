@@ -7,7 +7,7 @@ part 'message_sent_data.freezed.dart';
 part 'message_sent_data.g.dart';
 
 @freezed
-class MessageSentData with _$MessageSentData {
+sealed class MessageSentData with _$MessageSentData {
   const factory MessageSentData({
     required int chatId,
     required SerializedMessage message,

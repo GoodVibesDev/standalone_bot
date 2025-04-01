@@ -6,7 +6,7 @@ part 'start_data.freezed.dart';
 part 'start_data.g.dart';
 
 @freezed
-class StartData with _$StartData {
+sealed class StartData with _$StartData {
   factory StartData({
     @Default([]) List<BotCommand> commands,
   }) = _StartData;

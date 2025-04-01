@@ -6,7 +6,7 @@ part 'send_message_groups_data.freezed.dart';
 part 'send_message_groups_data.g.dart';
 
 @freezed
-class SendMessageGroupsData with _$SendMessageGroupsData {
+sealed class SendMessageGroupsData with _$SendMessageGroupsData {
   const factory SendMessageGroupsData({
     @Default([]) List<MessageGroup> messageGroups,
   }) = _SendMessageGroupsData;

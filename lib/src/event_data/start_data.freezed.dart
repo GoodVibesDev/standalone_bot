@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,81 +10,56 @@ part of 'start_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-StartData _$StartDataFromJson(Map<String, dynamic> json) {
-  return _StartData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$StartData {
-  List<BotCommand> get commands => throw _privateConstructorUsedError;
-
-  /// Serializes this StartData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  List<BotCommand> get commands;
 
   /// Create a copy of StartData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $StartDataCopyWith<StartData> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class $StartDataCopyWith<$Res> {
-  factory $StartDataCopyWith(StartData value, $Res Function(StartData) then) =
-      _$StartDataCopyWithImpl<$Res, StartData>;
-  @useResult
-  $Res call({List<BotCommand> commands});
-}
-
-/// @nodoc
-class _$StartDataCopyWithImpl<$Res, $Val extends StartData>
-    implements $StartDataCopyWith<$Res> {
-  _$StartDataCopyWithImpl(this._value, this._then);
-
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
-
-  /// Create a copy of StartData
-  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
+  $StartDataCopyWith<StartData> get copyWith =>
+      _$StartDataCopyWithImpl<StartData>(this as StartData, _$identity);
+
+  /// Serializes this StartData to a JSON map.
+  Map<String, dynamic> toJson();
+
   @override
-  $Res call({
-    Object? commands = null,
-  }) {
-    return _then(_value.copyWith(
-      commands: null == commands
-          ? _value.commands
-          : commands // ignore: cast_nullable_to_non_nullable
-              as List<BotCommand>,
-    ) as $Val);
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is StartData &&
+            const DeepCollectionEquality().equals(other.commands, commands));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(commands));
+
+  @override
+  String toString() {
+    return 'StartData(commands: $commands)';
   }
 }
 
 /// @nodoc
-abstract class _$$StartDataImplCopyWith<$Res>
-    implements $StartDataCopyWith<$Res> {
-  factory _$$StartDataImplCopyWith(
-          _$StartDataImpl value, $Res Function(_$StartDataImpl) then) =
-      __$$StartDataImplCopyWithImpl<$Res>;
-  @override
+abstract mixin class $StartDataCopyWith<$Res> {
+  factory $StartDataCopyWith(StartData value, $Res Function(StartData) _then) =
+      _$StartDataCopyWithImpl;
   @useResult
   $Res call({List<BotCommand> commands});
 }
 
 /// @nodoc
-class __$$StartDataImplCopyWithImpl<$Res>
-    extends _$StartDataCopyWithImpl<$Res, _$StartDataImpl>
-    implements _$$StartDataImplCopyWith<$Res> {
-  __$$StartDataImplCopyWithImpl(
-      _$StartDataImpl _value, $Res Function(_$StartDataImpl) _then)
-      : super(_value, _then);
+class _$StartDataCopyWithImpl<$Res> implements $StartDataCopyWith<$Res> {
+  _$StartDataCopyWithImpl(this._self, this._then);
+
+  final StartData _self;
+  final $Res Function(StartData) _then;
 
   /// Create a copy of StartData
   /// with the given fields replaced by the non-null parameter values.
@@ -92,9 +68,9 @@ class __$$StartDataImplCopyWithImpl<$Res>
   $Res call({
     Object? commands = null,
   }) {
-    return _then(_$StartDataImpl(
+    return _then(_self.copyWith(
       commands: null == commands
-          ? _value._commands
+          ? _self.commands
           : commands // ignore: cast_nullable_to_non_nullable
               as List<BotCommand>,
     ));
@@ -103,12 +79,11 @@ class __$$StartDataImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$StartDataImpl implements _StartData {
-  _$StartDataImpl({final List<BotCommand> commands = const []})
+class _StartData implements StartData {
+  _StartData({final List<BotCommand> commands = const []})
       : _commands = commands;
-
-  factory _$StartDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$StartDataImplFromJson(json);
+  factory _StartData.fromJson(Map<String, dynamic> json) =>
+      _$StartDataFromJson(json);
 
   final List<BotCommand> _commands;
   @override
@@ -119,16 +94,26 @@ class _$StartDataImpl implements _StartData {
     return EqualUnmodifiableListView(_commands);
   }
 
+  /// Create a copy of StartData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'StartData(commands: $commands)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$StartDataCopyWith<_StartData> get copyWith =>
+      __$StartDataCopyWithImpl<_StartData>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$StartDataToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$StartDataImpl &&
+            other is _StartData &&
             const DeepCollectionEquality().equals(other._commands, _commands));
   }
 
@@ -137,35 +122,44 @@ class _$StartDataImpl implements _StartData {
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(_commands));
 
-  /// Create a copy of StartData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$StartDataImplCopyWith<_$StartDataImpl> get copyWith =>
-      __$$StartDataImplCopyWithImpl<_$StartDataImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$StartDataImplToJson(
-      this,
-    );
+  String toString() {
+    return 'StartData(commands: $commands)';
   }
 }
 
-abstract class _StartData implements StartData {
-  factory _StartData({final List<BotCommand> commands}) = _$StartDataImpl;
-
-  factory _StartData.fromJson(Map<String, dynamic> json) =
-      _$StartDataImpl.fromJson;
-
+/// @nodoc
+abstract mixin class _$StartDataCopyWith<$Res>
+    implements $StartDataCopyWith<$Res> {
+  factory _$StartDataCopyWith(
+          _StartData value, $Res Function(_StartData) _then) =
+      __$StartDataCopyWithImpl;
   @override
-  List<BotCommand> get commands;
+  @useResult
+  $Res call({List<BotCommand> commands});
+}
+
+/// @nodoc
+class __$StartDataCopyWithImpl<$Res> implements _$StartDataCopyWith<$Res> {
+  __$StartDataCopyWithImpl(this._self, this._then);
+
+  final _StartData _self;
+  final $Res Function(_StartData) _then;
 
   /// Create a copy of StartData
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$StartDataImplCopyWith<_$StartDataImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? commands = null,
+  }) {
+    return _then(_StartData(
+      commands: null == commands
+          ? _self._commands
+          : commands // ignore: cast_nullable_to_non_nullable
+              as List<BotCommand>,
+    ));
+  }
 }
+
+// dart format on

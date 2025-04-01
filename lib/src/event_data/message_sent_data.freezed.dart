@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,36 +10,53 @@ part of 'message_sent_data.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-MessageSentData _$MessageSentDataFromJson(Map<String, dynamic> json) {
-  return _MessageSentData.fromJson(json);
-}
 
 /// @nodoc
 mixin _$MessageSentData {
-  int get chatId => throw _privateConstructorUsedError;
-  SerializedMessage get message => throw _privateConstructorUsedError;
-  List<Message> get sentTgMessages => throw _privateConstructorUsedError;
-
-  /// Serializes this MessageSentData to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  int get chatId;
+  SerializedMessage get message;
+  List<Message> get sentTgMessages;
 
   /// Create a copy of MessageSentData
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
   $MessageSentDataCopyWith<MessageSentData> get copyWith =>
-      throw _privateConstructorUsedError;
+      _$MessageSentDataCopyWithImpl<MessageSentData>(
+          this as MessageSentData, _$identity);
+
+  /// Serializes this MessageSentData to a JSON map.
+  Map<String, dynamic> toJson();
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is MessageSentData &&
+            (identical(other.chatId, chatId) || other.chatId == chatId) &&
+            (identical(other.message, message) || other.message == message) &&
+            const DeepCollectionEquality()
+                .equals(other.sentTgMessages, sentTgMessages));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, chatId, message,
+      const DeepCollectionEquality().hash(sentTgMessages));
+
+  @override
+  String toString() {
+    return 'MessageSentData(chatId: $chatId, message: $message, sentTgMessages: $sentTgMessages)';
+  }
 }
 
 /// @nodoc
-abstract class $MessageSentDataCopyWith<$Res> {
+abstract mixin class $MessageSentDataCopyWith<$Res> {
   factory $MessageSentDataCopyWith(
-          MessageSentData value, $Res Function(MessageSentData) then) =
-      _$MessageSentDataCopyWithImpl<$Res, MessageSentData>;
+          MessageSentData value, $Res Function(MessageSentData) _then) =
+      _$MessageSentDataCopyWithImpl;
   @useResult
   $Res call(
       {int chatId, SerializedMessage message, List<Message> sentTgMessages});
@@ -47,14 +65,12 @@ abstract class $MessageSentDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MessageSentDataCopyWithImpl<$Res, $Val extends MessageSentData>
+class _$MessageSentDataCopyWithImpl<$Res>
     implements $MessageSentDataCopyWith<$Res> {
-  _$MessageSentDataCopyWithImpl(this._value, this._then);
+  _$MessageSentDataCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final MessageSentData _self;
+  final $Res Function(MessageSentData) _then;
 
   /// Create a copy of MessageSentData
   /// with the given fields replaced by the non-null parameter values.
@@ -65,20 +81,20 @@ class _$MessageSentDataCopyWithImpl<$Res, $Val extends MessageSentData>
     Object? message = null,
     Object? sentTgMessages = null,
   }) {
-    return _then(_value.copyWith(
+    return _then(_self.copyWith(
       chatId: null == chatId
-          ? _value.chatId
+          ? _self.chatId
           : chatId // ignore: cast_nullable_to_non_nullable
               as int,
       message: null == message
-          ? _value.message
+          ? _self.message
           : message // ignore: cast_nullable_to_non_nullable
               as SerializedMessage,
       sentTgMessages: null == sentTgMessages
-          ? _value.sentTgMessages
+          ? _self.sentTgMessages
           : sentTgMessages // ignore: cast_nullable_to_non_nullable
               as List<Message>,
-    ) as $Val);
+    ));
   }
 
   /// Create a copy of MessageSentData
@@ -86,72 +102,22 @@ class _$MessageSentDataCopyWithImpl<$Res, $Val extends MessageSentData>
   @override
   @pragma('vm:prefer-inline')
   $SerializedMessageCopyWith<$Res> get message {
-    return $SerializedMessageCopyWith<$Res>(_value.message, (value) {
-      return _then(_value.copyWith(message: value) as $Val);
+    return $SerializedMessageCopyWith<$Res>(_self.message, (value) {
+      return _then(_self.copyWith(message: value));
     });
   }
 }
 
 /// @nodoc
-abstract class _$$MessageSentDataImplCopyWith<$Res>
-    implements $MessageSentDataCopyWith<$Res> {
-  factory _$$MessageSentDataImplCopyWith(_$MessageSentDataImpl value,
-          $Res Function(_$MessageSentDataImpl) then) =
-      __$$MessageSentDataImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call(
-      {int chatId, SerializedMessage message, List<Message> sentTgMessages});
-
-  @override
-  $SerializedMessageCopyWith<$Res> get message;
-}
-
-/// @nodoc
-class __$$MessageSentDataImplCopyWithImpl<$Res>
-    extends _$MessageSentDataCopyWithImpl<$Res, _$MessageSentDataImpl>
-    implements _$$MessageSentDataImplCopyWith<$Res> {
-  __$$MessageSentDataImplCopyWithImpl(
-      _$MessageSentDataImpl _value, $Res Function(_$MessageSentDataImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of MessageSentData
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? chatId = null,
-    Object? message = null,
-    Object? sentTgMessages = null,
-  }) {
-    return _then(_$MessageSentDataImpl(
-      chatId: null == chatId
-          ? _value.chatId
-          : chatId // ignore: cast_nullable_to_non_nullable
-              as int,
-      message: null == message
-          ? _value.message
-          : message // ignore: cast_nullable_to_non_nullable
-              as SerializedMessage,
-      sentTgMessages: null == sentTgMessages
-          ? _value._sentTgMessages
-          : sentTgMessages // ignore: cast_nullable_to_non_nullable
-              as List<Message>,
-    ));
-  }
-}
-
-/// @nodoc
 @JsonSerializable()
-class _$MessageSentDataImpl implements _MessageSentData {
-  const _$MessageSentDataImpl(
+class _MessageSentData implements MessageSentData {
+  const _MessageSentData(
       {required this.chatId,
       required this.message,
       required final List<Message> sentTgMessages})
       : _sentTgMessages = sentTgMessages;
-
-  factory _$MessageSentDataImpl.fromJson(Map<String, dynamic> json) =>
-      _$$MessageSentDataImplFromJson(json);
+  factory _MessageSentData.fromJson(Map<String, dynamic> json) =>
+      _$MessageSentDataFromJson(json);
 
   @override
   final int chatId;
@@ -165,16 +131,26 @@ class _$MessageSentDataImpl implements _MessageSentData {
     return EqualUnmodifiableListView(_sentTgMessages);
   }
 
+  /// Create a copy of MessageSentData
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  String toString() {
-    return 'MessageSentData(chatId: $chatId, message: $message, sentTgMessages: $sentTgMessages)';
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @pragma('vm:prefer-inline')
+  _$MessageSentDataCopyWith<_MessageSentData> get copyWith =>
+      __$MessageSentDataCopyWithImpl<_MessageSentData>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$MessageSentDataToJson(
+      this,
+    );
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$MessageSentDataImpl &&
+            other is _MessageSentData &&
             (identical(other.chatId, chatId) || other.chatId == chatId) &&
             (identical(other.message, message) || other.message == message) &&
             const DeepCollectionEquality()
@@ -186,43 +162,69 @@ class _$MessageSentDataImpl implements _MessageSentData {
   int get hashCode => Object.hash(runtimeType, chatId, message,
       const DeepCollectionEquality().hash(_sentTgMessages));
 
-  /// Create a copy of MessageSentData
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  @pragma('vm:prefer-inline')
-  _$$MessageSentDataImplCopyWith<_$MessageSentDataImpl> get copyWith =>
-      __$$MessageSentDataImplCopyWithImpl<_$MessageSentDataImpl>(
-          this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$MessageSentDataImplToJson(
-      this,
-    );
+  String toString() {
+    return 'MessageSentData(chatId: $chatId, message: $message, sentTgMessages: $sentTgMessages)';
   }
 }
 
-abstract class _MessageSentData implements MessageSentData {
-  const factory _MessageSentData(
-      {required final int chatId,
-      required final SerializedMessage message,
-      required final List<Message> sentTgMessages}) = _$MessageSentDataImpl;
+/// @nodoc
+abstract mixin class _$MessageSentDataCopyWith<$Res>
+    implements $MessageSentDataCopyWith<$Res> {
+  factory _$MessageSentDataCopyWith(
+          _MessageSentData value, $Res Function(_MessageSentData) _then) =
+      __$MessageSentDataCopyWithImpl;
+  @override
+  @useResult
+  $Res call(
+      {int chatId, SerializedMessage message, List<Message> sentTgMessages});
 
-  factory _MessageSentData.fromJson(Map<String, dynamic> json) =
-      _$MessageSentDataImpl.fromJson;
+  @override
+  $SerializedMessageCopyWith<$Res> get message;
+}
 
-  @override
-  int get chatId;
-  @override
-  SerializedMessage get message;
-  @override
-  List<Message> get sentTgMessages;
+/// @nodoc
+class __$MessageSentDataCopyWithImpl<$Res>
+    implements _$MessageSentDataCopyWith<$Res> {
+  __$MessageSentDataCopyWithImpl(this._self, this._then);
+
+  final _MessageSentData _self;
+  final $Res Function(_MessageSentData) _then;
 
   /// Create a copy of MessageSentData
   /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$MessageSentDataImplCopyWith<_$MessageSentDataImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  @pragma('vm:prefer-inline')
+  $Res call({
+    Object? chatId = null,
+    Object? message = null,
+    Object? sentTgMessages = null,
+  }) {
+    return _then(_MessageSentData(
+      chatId: null == chatId
+          ? _self.chatId
+          : chatId // ignore: cast_nullable_to_non_nullable
+              as int,
+      message: null == message
+          ? _self.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as SerializedMessage,
+      sentTgMessages: null == sentTgMessages
+          ? _self._sentTgMessages
+          : sentTgMessages // ignore: cast_nullable_to_non_nullable
+              as List<Message>,
+    ));
+  }
+
+  /// Create a copy of MessageSentData
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $SerializedMessageCopyWith<$Res> get message {
+    return $SerializedMessageCopyWith<$Res>(_self.message, (value) {
+      return _then(_self.copyWith(message: value));
+    });
+  }
 }
+
+// dart format on
