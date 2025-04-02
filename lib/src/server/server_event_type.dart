@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:standalone_bot/src/client/client.dart';
 import 'package:standalone_bot/src/event_handler/event_handler.dart';
 import 'package:teledart/teledart.dart';
@@ -52,7 +54,9 @@ AbstractEventHandler _getFileUrlHandlerFactory(
   TeleDartMessageSender messageSender,
   Client? client,
 ) =>
-    const GetFileUrlHandler();
+// TODO(sergsavchuk): use better way to inject token
+//  (that would be more safe)
+    GetFileUrlHandler(Platform.environment['BOT_TOKEN']!, bot, client);
 
 AbstractEventHandler _callbackAnswerHandlerFactory(
   TeleDart bot,
